@@ -1,4 +1,4 @@
-# fun_control.sh
+# fan_control.sh
 Simple and easy fan control for Raspberry Pi.
 It DO NOT see the CPU temparature (future plan, but not now).
 Just start or stop.
