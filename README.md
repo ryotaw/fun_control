@@ -16,3 +16,8 @@ Place anywhere you want.
 ## Run at the startup
 Edit `/etc/rc.local` and write `fan_control.sh start` or `fan_control.sh stop`
 Or edit crontab.
+``` shell
+$ sudo su
+$ crontab -e
+* * * * * for i in `seq 0 10 59`;do (sleep $i;/home/ryota/app/fan_control.sh check) & done;
+```
