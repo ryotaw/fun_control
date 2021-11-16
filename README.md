@@ -19,5 +19,5 @@ Or edit crontab.
 ``` shell
 $ sudo su
 $ crontab -e
-* * * * * for i in `seq 0 10 59`;do (sleep $i;/home/ryota/app/fan_control.sh check) & done;
+* * * * * for i in `seq 0 10 59`;do (sleep $i;/usr/local/bin/app/fan_control.sh check) & done;
 ```
